@@ -13,9 +13,21 @@ public class UnoCardGame {
 
     /**
      * @param args the command line arguments
-     */
+     */  
     public static void main(String[] args) {
-        // TODO code application logic here
+        Deck deck = new Deck();
+        deck.shuffle();
+
+        Player player1 = new Player();
+        Player player2 = new Player();
+
+        // Initial card draw
+        for (int i = 0; i < 7; i++) {
+            player1.drawCard(deck);
+            player2.drawCard(deck);
+        }
+        // Show player hands (for testing)
+        System.out.println("Player 1 hand: " + player1.getHand());
+        System.out.println("Player 2 hand: " + player2.getHand());
     }
-    
 }
