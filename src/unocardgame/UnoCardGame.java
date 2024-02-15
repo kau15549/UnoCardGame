@@ -6,7 +6,8 @@ package unocardgame;
 
 /**
  *
- * @author User
+ * @author Harpreet kaur
+ 15/02/2024
  */
 public class UnoCardGame {
 
