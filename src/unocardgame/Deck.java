@@ -6,7 +6,10 @@ package unocardgame;
 
 /**
  *
- * @author User
+ * @author Harpreet kaur
+ * @editor Nitesh Bajaj
+ * @editor Utsavjeet Singh
+ 15/02/2024
  */
 
    
