@@ -21,4 +21,8 @@ public class Card {
     public String toString() {
         return color + " " + value;
     }
+
+    public boolean matches(Card otherCard) {
+        return color.equals(otherCard.getColor()) || value.equals(otherCard.getValue());
+    }
 }

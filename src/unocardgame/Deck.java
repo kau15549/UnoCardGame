@@ -23,12 +23,11 @@ public class Deck {
         for (String color : colors) {
             for (String value : values) {
                 cards.add(new Card(color, value));
-                if (!value.equals("0")) { // Add two of each card, except for 0
+                if (!value.equals("0")) {
                     cards.add(new Card(color, value));
                 }
             }
         }
-        // Add Wild cards
         for (int i = 0; i < 4; i++) {
             cards.add(new Card("Wild", "Color Changer"));
             cards.add(new Card("Wild", "Draw Four"));
@@ -42,5 +41,4 @@ public class Deck {
     public Card drawCard() {
         return cards.remove(cards.size() - 1);
     }
-}
 }
